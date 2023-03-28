@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+ /*-----------------Body CSS-----------------------*/
+ body{
+    background: url(danilo-rios-bj5y_XuSm58-unsplash.jpg) fixed;
+    background-size: cover;
+    background-position: center;
+ }
+ /*------------------header CSS-------------------*/
+ header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    width: 100%;
+    z-index: 99;
+    text-decoration: none;
+ }
+ /*-----------------logo CSS---------------------*/
+ .logo{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+    cursor: pointer;
+ }
+ /*----------------navigation list-----------------*/
+ .navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    text-decoration:none;
+ }
+
+ .navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s;
+ }
+
+ .navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btn{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation .btn:hover{
+    background: #fff;
+    color: #162938;
+}
+
+/*-------------------Responsiveness for header-----------------*/
+
+/*-------------------Welcome Text--------------------*/
+.magret{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+.welcometext h2{
+    text-transform: uppercase;
+}
+/*-----------------Options----------------------------*/
+.paulinaContainer{
+    display: grid;
+    position: relative;
+    align-items: center;
+    padding: 20px 100px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+/*----------------Cards-------------------*/
+.cards {
+    border-radius: 20px;
+    margin: 20px 10px;
+    width:380px;
+    transition: 0.3s;
+    box-shadow: 2px 0 6px 0 rgba(0,0,0,0.2);
+}
+.cards a{
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+}
+.cards:hover {
+    box-shadow: 0 8px 12px 0 rgba(255, 251, 251, 0.967);
+}
+.specifics {
+    padding: 30px 30px;
+    text-align: center;
+}
+img {
+    border-radius: 5px 5px 0 0;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+/*---------------footer----------------*/
+footer{ 
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: transparent;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
